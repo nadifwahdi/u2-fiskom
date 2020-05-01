@@ -1,4 +1,4 @@
-# U2 Fisika Komputasi  
+# U2 Fisika Komputasi | Kelompok 7
 
 Nama anggota kelompok :
 
