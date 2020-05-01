@@ -897,42 +897,46 @@ Metode numerik yang digunakan untuk menyelesaikan persamaan diferensial ini adal
 ### Metode Euler 
 
 Dari definisi turunan, diketahui bahwa
-
+```
 $\frac{dy(x)}{dx} = \lim_{\Delta x \to 0} \frac{y ( \Delta x + x) - y(x)}{\Delta x}$
-
+```
 Dengan demikian, persamaan diferensial dapat ditulis sebagai
-
+```
 $y(\Delta x + x) = y(x) + \Delta x f(x,y)$
-
-Melalui persamaan ini, $y$ setiap saat dapat ditentukan dengan syarat $y$ dan $f(x,y)$ awal.
+```
+Melalui persamaan ini, y setiap saat dapat ditentukan dengan syarat y dan f(x,y) awal.
 
 ### Shooting Method
 
-Shooting method merupakan suatu metode yang dapat digunakan untuk menyelesaikan PDB dengan mengubah suatu permasalahan nilai batas (boundary value problem) dengan mereduksinya menjadi permasalahan nilai awal (initial value problem) yang sama. Shooting method ini digunakan untuk mencari nilai awal ($z$) yang paling tepat agar syarat-syarat batas dapat terpenuhi. Konsepnya adalah dengan menebak terlebih dahulu nilai awal ($z$).
+Shooting method merupakan suatu metode yang dapat digunakan untuk menyelesaikan PDB dengan mengubah suatu permasalahan nilai batas (boundary value problem) dengan mereduksinya menjadi permasalahan nilai awal (initial value problem) yang sama. Shooting method ini digunakan untuk mencari nilai awal (z) yang paling tepat agar syarat-syarat batas dapat terpenuhi. Konsepnya adalah dengan menebak terlebih dahulu nilai awal (z).
 
-Nilai pada batas akhir ($g_1 (x_1 , z )$) bergantung oleh nilai awal ($z$) dan nilainya belum tentu tepat pada nilai batas ($y(x_1) = \beta$). Fungsi selisih antara nilai pada batas akhir ($g_1 (x_1 , z )$) dan nilai pada batas akhir didefinisikan seperti berikut
+Nilai pada batas akhir (g_1 (x_1 ,z)) bergantung oleh nilai awal (z) dan nilainya belum tentu tepat pada nilai batas (y(x_1) = \beta). Fungsi selisih antara nilai pada batas akhir (g_1 (x_1,z)) dan nilai pada batas akhir didefinisikan seperti berikut
 
+```
 $\phi(z) = g_1 (x_1 , z ) - \beta$
+```
 
 Nilai awal ($z$) yang tepat akan memberikan ($g_1(x)1,z)=\beta$) sehingga didapat $\phi(z)$ mendekati 0. Fungsi $\phi(z)$ dibuat bernilai mendekati nol dengan cara mengupdate nilai ($z$). Proses penggantian nilai awal ini memanfaatkan metode pencarian akar dari fungsi ($z$) secara numerik, seperti metode bisection.
 
 ### Bisection 
 
-Metode Bisection atau metode bagi dua pada prinsipnya metode ini adalah mencari nilai rata – rata dari nilai estimasi tebakan awal yang mengapit nilai akar sebenarnya untuk menentukkan nilai akar persamaan yang dimaksud. Pada metode ini diperlukan setidaknya 2 buah nilai tebakan awal dan untuk mendapatkan nilai akar yang sesungguhnya. Untuk mengetahui apakah nilai tebakan kita sudah berada diantara nilai akar yang sesungguhnya dilakukan langkah sebagai berikut : Apabila fungsi ($x$) real dan kontinu pada interval $[a,b]$ serta $f(a)$ dan $f(b)$ memiliki nilai berlainan tanda atau dengan kata lain: $f(a) \cdot  f(b) < 0$ , maka setidaknya terdapat satu buah akar real pada interval tersebut. Apabila kondisi tersebut telah terpenuhi, untuk mencari nilai taksiran baru $x_1$ adalah
+Metode Bisection atau metode bagi dua pada prinsipnya metode ini adalah mencari nilai rata – rata dari nilai estimasi tebakan awal yang mengapit nilai akar sebenarnya untuk menentukkan nilai akar persamaan yang dimaksud. Pada metode ini diperlukan setidaknya 2 buah nilai tebakan awal dan untuk mendapatkan nilai akar yang sesungguhnya. Untuk mengetahui apakah nilai tebakan kita sudah berada diantara nilai akar yang sesungguhnya dilakukan langkah sebagai berikut : Apabila f(x) real dan kontinu pada interval [a,b] serta f(a) dan f(b) memiliki nilai berlainan tanda atau dengan kata lain: f(a) x f(b) < 0 , maka setidaknya terdapat satu buah akar real pada interval tersebut. Apabila kondisi tersebut telah terpenuhi, untuk mencari nilai taksiran baru x_1 adalah
 
+```
 $x_1 = \frac{a + b}{2}$
+```
 
-Kemudian langkah selanjutnya, nilai $x_1$ ini akan digunakan untuk mengganti salah satu nilai atau untuk mempersempit interval taksiran.
+Kemudian langkah selanjutnya, nilai x_1 ini akan digunakan untuk mengganti salah satu nilai atau untuk mempersempit interval taksiran.
 
 Dalam menentukan nilai mana yang akan diganti, perlu diperhatikan kondisi-kondisi berikut :
-
+```
 1. Apabila $(a) \cdot f(x_1) < 0$ maka akar berada pada interval bawah $[a,x_1]$, set $b = x_1$ kemudian lanjutkan iterasi perhitungan.
 2. Apabila $(a) \cdot f(x_1) > 0$ maka akar berada pada interval atas $[b,x_1]$, set $a = x_1$ kemudian lanjutkan iterasi perhitungan.
 3. Apabila $(a) \cdot f(x_1) = 0$ maka akar persamaan adalah $x_1$, hentikan perhitungan.
-
+```
 ## Hasil
 
-Kecepatan secara analitik : 1.454 m/s
+Dilakukan _running_ program dan didapatkan hasil
 
 | No | dt (s) | v awal (m/s) | 
 | --- | --- | --- | 
@@ -940,7 +944,9 @@ Kecepatan secara analitik : 1.454 m/s
 | 2 | 0.001 | 1.436 | 
 | 3 | 0.0001 | 1.4546 | 
 
-***
+
+
+Kecepatan secara analitik : 1.454 m/s
 
 | No | dt (s)     | galat (%) |
 | ---- | ---------- | ---------------- |
