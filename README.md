@@ -349,6 +349,8 @@ int main () {
 
 # Soal 3
 
+Program untuk menjalankan soal ini https://github.com/nadifwahdi/u2-fiskom/blob/master/src.rar
+
 #### Nomor a
 
 Langkah-langkah yang dilakukan adalah sebagai berikut. Awalnya, data table dalam soal diimpor ke dalam bentuk txt yang digunakan sebagai input training model neural network. Dalam program bahasa c++ yang telah dilampirkan dalam file jawaban, dilakukan cara coba-coba mulai dari jumlah neuron dan jumlah layer yang paling sedikit sampai mendapatkan hasil prediksi yang sesuai dengan kelas pada table soal. Dalam program tersebut dilakukan feed forward dan back propagation. Pada akhirnya, diperoleh hasil prediksi yang paling mendekati nilai aslinya, yaitu JST dengan 
