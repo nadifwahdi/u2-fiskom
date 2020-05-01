@@ -1,4 +1,5 @@
-#U2 Fisika Komputasi | Kelompok 
+# U2 Fisika Komputasi  
+
 Nama anggota kelompok :
 
 1. 10217032 - Hanifil Fikri
@@ -10,9 +11,10 @@ Nama anggota kelompok :
 
 ***
 
-#Soal 1
+# Soal 1
 
-####Nomor a
+#### Nomor a
+
 ```
 Pendulum dengan panjang tali tegang $l$ memiliki ujung berbentuk bola dengan massa $m$ dan diameter $D$, disimpangkan dengan sudut $\theta$ dari sumbu-$y$ di sistem dengan udara berviskositas $\eta$. Pendulum tersebut mengalami percepatan gravitasi 
 
@@ -87,7 +89,7 @@ Sedangkan, untuk persamaan gerak pada arah-$y$ adalah
 \end{equation}
 ```
 
-####Nomor b
+#### Nomor b
 ```
 Kita tinjau dulu persamaan gerak pada sumbu-$x$.
 <br></br>
@@ -96,7 +98,7 @@ Pada persamaan (8), suku $\frac{g}{l}xy$ menunjukkan gaya tegangan tali yang dia
 Sedangkan, untuk arah sumbu-$y$, pada persamaan (9), suku-sukunya menunjukkan gaya yang sama kecuali pada ruas kanan terdapat $g$ karena pada arah-$y$ pendulum dipengaruhi oleh gaya berat benda yang arahnya $-\hat{y}$.
 ```
 
-####Nomor c
+#### Nomor c
 ```
 Karena tidak ada hambatan udara, maka $\eta=0$. Sehingga persamaan (8) dan (9) pada nomor 1a menjadi seperti berikut.
 <br/><br/>
@@ -118,7 +120,7 @@ Untuk sumbu $y$ :
 Sistem hanya bergantung pada percepatan sentripetal.
 ```
 
-####Nomor d
+#### Nomor d
 ```
 Apabila pendulum disimpangkan denngan simpangan yang cukup kecil, berlaku $\sin\theta\approx\theta$ dan $\cos\theta\approx 1$. Sistem tidak mengalami gesekan udara ($\eta = 0$) sehingga pada arah-$x$, persamaan (8) soal no. 1a, menjadi
 
@@ -136,9 +138,9 @@ Sedangkan untuk arah-$y$, persamaan (9) soal no. 1a, menjadi
 
 ```
 
-#Soal 2
+# Soal 2
 
-####Nomor a
+#### Nomor a
 ```
 Dengan menggunakan sistem bandul dalam soal nomor 1 dapat pula dipilih
 sistem koordinat polar $r$ dan $\theta$ yang dalam hal ini akan terpenuhi
@@ -210,7 +212,7 @@ m g \cos \theta - T = m l \dot{\theta}
 \end{equation}
 ```
 
-####Nomor b
+#### Nomor b
 ```
 Untuk kasus $\theta$ kecil, maka berlaku $\sin \theta \approx \theta$, sehingga persamaan (2) pada nomor 2a menjadi
 
@@ -261,7 +263,7 @@ T = m g - m l C_2 \omega \cos \omega t + m l C_1 \omega \sin \omega t
 \end{equation}
 ```
 
-####Nomor c
+#### Nomor c
 Hasil numerik menggunakan algoritma untuk simpangan dengan perbedaan theta kecil dan theta besar
 
 <div>
@@ -277,8 +279,8 @@ Sedangkan hasil numerik menggunakan algoritma untuk kecepatan dengan perbedaan t
 </div>
 
 
-####Nomor d
-Sintak program untuk mencari solusi numerik dengan algoritma euler adalah sebagai berikut
+#### Nomor d
+Sintaks program untuk mencari solusi numerik dengan algoritma euler adalah sebagai berikut
 ```cpp
 //Soal 2d
 #include <iostream>
@@ -346,9 +348,9 @@ int main () {
 }
 ```
 
-#Soal 3
+# Soal 3
 
-####Nomor a
+#### Nomor a
 
 Langkah-langkah yang dilakukan adalah sebagai berikut. Awalnya, data table dalam soal diimpor ke dalam bentuk txt yang digunakan sebagai input training model neural network. Dalam program bahasa c++ yang telah dilampirkan dalam file jawaban, dilakukan cara coba-coba mulai dari jumlah neuron dan jumlah layer yang paling sedikit sampai mendapatkan hasil prediksi yang sesuai dengan kelas pada table soal. Dalam program tersebut dilakukan feed forward dan back propagation. Pada akhirnya, diperoleh hasil prediksi yang paling mendekati nilai aslinya, yaitu JST dengan 
 * Jumlah neuron pada layer input N1 = 2
@@ -506,7 +508,7 @@ Targets: 1
 Net recent average error: 0.0289159
 ```
 
-####Nomor b
+#### Nomor b
 
 Langkah yang dilakukan sama dengan yang dilakukan di bagian a, hanya saja, dibutuhkan JST yang lebih kompleks karena persebaran datanya tidak merata. Pada akhirnya, diperoleh hasil prediksi yang paling mendekati nilai aslinya, yaitu JST dengan 
 
@@ -621,7 +623,7 @@ Targets: 1
 Net recent average error: 0.0900468
 ```
 
-####Nomor c
+#### Nomor c
 
 Langkah yang dilakukan sama dengan yang dilakukan di bagian a, hanya saja, dibutuhkan JST yang lebih kompleks karena persebaran datanya tidak merata. Pada akhirnya, diperoleh hasil prediksi yang paling mendekati nilai aslinya, yaitu JST dengan 
 
@@ -735,13 +737,13 @@ Targets: 0
 Net recent average error: 0.0930465
 ```
 
-####Nomor d
+#### Nomor d
 
 Persebaran data pada table 1 lebih sederhana dibandingkan table 2 dan 3 sehingga model arsitektur JST yang digunakan juga dapat lebih sederhana (hanya memerlukan sedikit layer dan neuron). Arsitektur JST perlu dibatasi paling sederhana karena apabila terlalu kompleks dapat menyebabkan overfitting model dan waktu processing yang dibutuhkan juga lebih lama.
 
-#Soal 4
+# Soal 4
 
-####Nomor a
+#### Nomor a
 ```
 // Get interpretation of position and group from chromosome
 function getValues() {
@@ -758,14 +760,14 @@ function getValues() {
 }
 ```
 
-####Nomor b
+#### Nomor b
 ```
 function fitness(a, b) {  
   return(Math.sqrt(Math.pow((a - 111), 2) + Math.pow((b - 111),2)));
 }
 ```
 
-####Nomor c
+#### Nomor c
 ```
 //nilai X0 dan Y0 dibuat = 111
 
@@ -798,7 +800,7 @@ function fitness(a, b) {  
 }
 ```
 
-####Nomor d
+#### Nomor d
 
 Script JS
 ```JS
@@ -878,23 +880,23 @@ VM199:15 kelas = 1
 VM199:16 val =  0.
 ```
 
-#Soal 5
+# Soal 5
 
-##Pendahuluan
+## Pendahuluan
 
-###Tujuan
+### Tujuan
 Pada kajian ini membahas sebuah permasalahan gerakan osilasi pegas yang tidak diketahui nilai kelajuan awalnya, lalu menggunakan shooting method untuk syarat batas dan menggunakan metode Euler untuk mencari solusi persamaan differensialnya.
 
-###Rumusan Masalah
+### Rumusan Masalah
 Menentukan kelajuan awal pada permasalahan gerakan osilasi pegas dengan shooting method dan metode Euler.
 
-##Metode
+## Metode
 
 Dalam fisika, gerakan osilasi pegas menjadi dasar dalam berbagai persoalaan fisika, seperti dalam getaran partikel akibat radiasi. Ini dapat dimodelkan sebagai gerakan osilasi pegas. Gerakan osilasi pegas ini dinyatakan dalam persamaan diferensial. Oleh karena itu, diperlukan komputasi untuk menghitung gerakan osilasi ini secara numerik.
 
 Metode numerik yang digunakan untuk menyelesaikan persamaan diferensial ini adalah dengan menggunakan metode Euler. Namun, apabila syarat awal yang digunakan tidak diketahui secara lengkap maka diperlukan metode lain. Misalnya, dapat dimanfaatkan syarat batas yang diberikan sebagai pengganti syarat awal. Dengan menggunakan shooting method, maka dapat ditentukan syarat awalnya melalui metode pencarian akar, seperti bisection. Dengan demikian, untuk menyelesaikan permasalahan gerakan osilasi pegas ini, dibutuhkan metode Euler dan shooting method melalui teknik pencarian akar (root finding)
 
-###Metode Euler 
+### Metode Euler 
 
 Dari definisi turunan, diketahui bahwa
 
@@ -906,7 +908,7 @@ $y(\Delta x + x) = y(x) + \Delta x f(x,y)$
 
 Melalui persamaan ini, $y$ setiap saat dapat ditentukan dengan syarat $y$ dan $f(x,y)$ awal.
 
-###Shooting Method
+### Shooting Method
 
 Shooting method merupakan suatu metode yang dapat digunakan untuk menyelesaikan PDB dengan mengubah suatu permasalahan nilai batas (boundary value problem) dengan mereduksinya menjadi permasalahan nilai awal (initial value problem) yang sama. Shooting method ini digunakan untuk mencari nilai awal ($z$) yang paling tepat agar syarat-syarat batas dapat terpenuhi. Konsepnya adalah dengan menebak terlebih dahulu nilai awal ($z$).
 
@@ -916,7 +918,7 @@ $\phi(z) = g_1 (x_1 , z ) - \beta$
 
 Nilai awal ($z$) yang tepat akan memberikan ($g_1(x)1,z)=\beta$) sehingga didapat $\phi(z)$ mendekati 0. Fungsi $\phi(z)$ dibuat bernilai mendekati nol dengan cara mengupdate nilai ($z$). Proses penggantian nilai awal ini memanfaatkan metode pencarian akar dari fungsi ($z$) secara numerik, seperti metode bisection.
 
-###Bisection 
+### Bisection 
 
 Metode Bisection atau metode bagi dua pada prinsipnya metode ini adalah mencari nilai rata – rata dari nilai estimasi tebakan awal yang mengapit nilai akar sebenarnya untuk menentukkan nilai akar persamaan yang dimaksud. Pada metode ini diperlukan setidaknya 2 buah nilai tebakan awal dan untuk mendapatkan nilai akar yang sesungguhnya. Untuk mengetahui apakah nilai tebakan kita sudah berada diantara nilai akar yang sesungguhnya dilakukan langkah sebagai berikut : Apabila fungsi ($x$) real dan kontinu pada interval $[a,b]$ serta $f(a)$ dan $f(b)$ memiliki nilai berlainan tanda atau dengan kata lain: $f(a) \cdot  f(b) < 0$ , maka setidaknya terdapat satu buah akar real pada interval tersebut. Apabila kondisi tersebut telah terpenuhi, untuk mencari nilai taksiran baru $x_1$ adalah
 
@@ -930,15 +932,15 @@ Dalam menentukan nilai mana yang akan diganti, perlu diperhatikan kondisi-kondis
 2. Apabila $(a) \cdot f(x_1) > 0$ maka akar berada pada interval atas $[b,x_1]$, set $a = x_1$ kemudian lanjutkan iterasi perhitungan.
 3. Apabila $(a) \cdot f(x_1) = 0$ maka akar persamaan adalah $x_1$, hentikan perhitungan.
 
-##Hasil
+## Hasil
 
 Kecepatan secara analitik : 1.454 m/s
 
-| No | dt (s)     | v awal (m/s) | 
-| ---- | ---------- | ---------------- | 
-| 1    | 0.01      | -2.779          | 
-| 2    | 0.001    | 1.436           | 
-| 3    | 0.0001  | 1.4546         | 
+| No | dt (s) | v awal (m/s) | 
+| --- | --- | --- | 
+| 1 | 0.01 | -2.779 |
+| 2 | 0.001 | 1.436 | 
+| 3 | 0.0001 | 1.4546 | 
 
 | No | dt (s)     | galat (%) |
 | ---- | ---------- | ---------------- |
@@ -946,11 +948,11 @@ Kecepatan secara analitik : 1.454 m/s
 | 2 | 0.001 |  1.237964 |
 | 3 | 0.0001 |  0.041265 |
 
-##Analisis
+## Analisis
 
 Program dimulai dengan terlebih dahulu menebak nilai kecepatan awal $v_0$. Kemudian dari nilai kecepatan awal tersebut, dapat diketahui posisi benda pada saat t=9 sekon, kemudian dibandingkan dengan kondisi awal sebenarnya. Dalam program ini, nilai z dicari dengan menggunakan metode Bisection, yaitu dengan terlebih dahulu menebak sebanyak 2 buah nilai kecepatan awal. Jika di antara dua nilai tersebut tidak terdapat solusi yang menyebabkan selisih nilai x(9) terhadap beta sama dengan nol, maka program akan meminta user untuk menginput nilai selang yang baru. Setelah mendapat selang yang sesuai, iterasi dilakukan program untuk memperoleh solusi nilai $v_0$ yang sesuai. Solusi ini diperoleh dengan menggunakan algoritma euler.
 
-##Referensi
+## Referensi
 
 Frankin, J. (2013). _Computational Methods for Physics_. CUP.
 
