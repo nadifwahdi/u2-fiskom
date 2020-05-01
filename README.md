@@ -268,14 +268,12 @@ Hasil numerik menggunakan algoritma untuk simpangan dengan perbedaan theta kecil
 
 <div>
     <a href="https://plotly.com/~ndffw/4/?share_key=bm4djddtzmQpXCGKCEAwOz" target="_blank" title="Simpangan (Euler)" style="display: block; text-align: center;"><img src="https://plotly.com/~ndffw/4.png?share_key=bm4djddtzmQpXCGKCEAwOz" alt="Simpangan (Euler)" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="ndffw:4" sharekey-plotly="bm4djddtzmQpXCGKCEAwOz" src="https://plotly.com/embed.js" async></script>
 </div>
 
 Sedangkan hasil numerik menggunakan algoritma untuk kecepatan dengan perbedaan theta kecil dan theta besar
 
 <div>
     <a href="https://plotly.com/~ndffw/5/?share_key=F0aUuQ4gxS4vRGtQdPhfD3" target="_blank" title="Kecepatan (Euler)" style="display: block; text-align: center;"><img src="https://plotly.com/~ndffw/5.png?share_key=F0aUuQ4gxS4vRGtQdPhfD3" alt="Kecepatan (Euler)" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="ndffw:5" sharekey-plotly="F0aUuQ4gxS4vRGtQdPhfD3" src="https://plotly.com/embed.js" async></script>
 </div>
 
 
@@ -941,6 +939,7 @@ Kecepatan secara analitik : 1.454 m/s
 | 1 | 0.01 | -2.779 |
 | 2 | 0.001 | 1.436 | 
 | 3 | 0.0001 | 1.4546 | 
+
 
 | No | dt (s)     | galat (%) |
 | ---- | ---------- | ---------------- |
