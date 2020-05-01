@@ -745,7 +745,7 @@ Persebaran data pada table 1 lebih sederhana dibandingkan table 2 dan 3 sehingga
 # Soal 4
 
 #### Nomor a
-```
+```js
 // Get interpretation of position and group from chromosome
 function getValues() {
  p = arguments[0];
@@ -762,14 +762,14 @@ function getValues() {
 ```
 
 #### Nomor b
-```
+```js
 function fitness(a, b) {  
   return(Math.sqrt(Math.pow((a - 111), 2) + Math.pow((b - 111),2)));
 }
 ```
 
 #### Nomor c
-```
+```js
 //nilai X0 dan Y0 dibuat = 111
 
 // Execute main funtion
