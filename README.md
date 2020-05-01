@@ -269,13 +269,14 @@ Hasil numerik menggunakan algoritma untuk simpangan dengan perbedaan theta kecil
 <div>
     <a href="https://plotly.com/~ndffw/4/?share_key=bm4djddtzmQpXCGKCEAwOz" target="_blank" title="Simpangan (Euler)" style="display: block; text-align: center;"><img src="https://plotly.com/~ndffw/4.png?share_key=bm4djddtzmQpXCGKCEAwOz" alt="Simpangan (Euler)" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
 </div>
+source : https://plotly.com/~ndffw/4/
 
 Sedangkan hasil numerik menggunakan algoritma untuk kecepatan dengan perbedaan theta kecil dan theta besar
 
 <div>
     <a href="https://plotly.com/~ndffw/5/?share_key=F0aUuQ4gxS4vRGtQdPhfD3" target="_blank" title="Kecepatan (Euler)" style="display: block; text-align: center;"><img src="https://plotly.com/~ndffw/5.png?share_key=F0aUuQ4gxS4vRGtQdPhfD3" alt="Kecepatan (Euler)" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
 </div>
-
+source : https://plotly.com/~ndffw/5/
 
 #### Nomor d
 Sintaks program untuk mencari solusi numerik dengan algoritma euler adalah sebagai berikut
@@ -858,7 +859,7 @@ p = 1101111
 VM199:13 x = 110
 VM199:14 y = 111
 VM199:15 kelas = 1
-VM199:16 val =  0.
+VM199:16 val =  0.5
 
 ```
 
@@ -875,7 +876,7 @@ p = 1101111
 VM199:13 x = 110
 VM199:14 y = 111
 VM199:15 kelas = 1
-VM199:16 val =  0.
+VM199:16 val =  0.5
 ```
 
 # Soal 5
@@ -938,13 +939,11 @@ Dalam menentukan nilai mana yang akan diganti, perlu diperhatikan kondisi-kondis
 
 Dilakukan _running_ program dan didapatkan hasil
 
-| No | dt (s) | v awal (m/s) | 
-| --- | --- | --- | 
-| 1 | 0.01 | -2.779 |
-| 2 | 0.001 | 1.436 | 
-| 3 | 0.0001 | 1.4546 | 
-
-
+No | dt (s) | v awal (m/s) 
+--- | --- | ---
+1 | 0.01 | -2.779
+2 | 0.001 | 1.436
+3 | 0.0001 | 1.4546
 
 Kecepatan secara analitik : 1.454 m/s
 
